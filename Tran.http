@@ -1,0 +1,58 @@
+
+
+POST http://localhost:5000/createuser
+Content-Type:application/json
+
+{
+    "name":"sasuke uchiha",
+    "email":"sasuke@gmail.com",
+    "password":"123456",
+    "profileImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=300"
+}
+
+###
+
+POST http://localhost:5000/user
+Content-Type:application/json 
+
+{
+    "email":"sasuke@gmail.com",
+    "password":"123456"
+}
+
+###
+
+GET http://localhost:5000/transaction
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTNhYWFiZjRkM2RiY2EwYTI2ZTY2NWQiLCJpYXQiOjE3ODIyMzA3OTYsImV4cCI6MTc4NDgyMjc5Nn0.myopm6jVvZGlXSro8VpvE49T3bWCE_-6PwbiQR2RNK4
+
+###
+GET http://localhost:5000/gettransaction
+
+###
+
+POST http://localhost:5000/addtransaction
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTNhYWFiZjRkM2RiY2EwYTI2ZTY2NWQiLCJpYXQiOjE3ODIyMzA3OTYsImV4cCI6MTc4NDgyMjc5Nn0.myopm6jVvZGlXSro8VpvE49T3bWCE_-6PwbiQR2RNK4
+
+{
+    "description":"Biriyani",
+    "amount":600,
+    "category":"Food",
+    "paymentMethod":"Cash",
+    "date":"2026-06-20",
+    "type":"Expenses"
+}
+
+###
+
+DELETE http://localhost:5000/deleteall
+
+###
+
+PUT http://localhost:5000/updatetransaction
+
+###
+
+DELETE http://localhost:5000/deletetransaction
+
+###
