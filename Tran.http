@@ -1,6 +1,6 @@
 
 
-POST http://localhost:5000/createuser
+POST https://expenses-tracker-backend-1-0b6w.onrender.com/createuser
 Content-Type:application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type:application/json
 
 ###
 
-POST http://localhost:5000/user
+POST https://expenses-tracker-backend-1-0b6w.onrender.com/user
 Content-Type:application/json 
 
 {
@@ -22,15 +22,15 @@ Content-Type:application/json
 
 ###
 
-GET http://localhost:5000/transaction
+GET https://expenses-tracker-backend-1-0b6w.onrender.com/transaction
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTNhYWFiZjRkM2RiY2EwYTI2ZTY2NWQiLCJpYXQiOjE3ODIyMzA3OTYsImV4cCI6MTc4NDgyMjc5Nn0.myopm6jVvZGlXSro8VpvE49T3bWCE_-6PwbiQR2RNK4
 
 ###
-GET http://localhost:5000/gettransaction
+GET https://expenses-tracker-backend-1-0b6w.onrender.com/gettransaction
 
 ###
 
-POST http://localhost:5000/addtransaction
+POST https://expenses-tracker-backend-1-0b6w.onrender.com/addtransaction
 Content-Type:application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTNhYWFiZjRkM2RiY2EwYTI2ZTY2NWQiLCJpYXQiOjE3ODIyMzA3OTYsImV4cCI6MTc4NDgyMjc5Nn0.myopm6jVvZGlXSro8VpvE49T3bWCE_-6PwbiQR2RNK4
 
@@ -45,14 +45,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTNhY
 
 ###
 
-DELETE http://localhost:5000/deleteall
+DELETE https://expenses-tracker-backend-1-0b6w.onrender.com/deleteall
 
 ###
 
-PUT http://localhost:5000/updatetransaction
+PUT https://expenses-tracker-backend-1-0b6w.onrender.com/updatetransaction
 
 ###
 
-DELETE http://localhost:5000/deletetransaction
+DELETE https://expenses-tracker-backend-1-0b6w.onrender.com/deletetransaction
 
 ###

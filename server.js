@@ -361,9 +361,7 @@ try{
     }).sort({date:1})
 
     if(filteredTransaction.length === 0){
-        return response.status(404).json({
-            message: "No Transaction Found"
-        })
+        return response.status(200).json([])
     }
 
     response.status(200).send(filteredTransaction)
